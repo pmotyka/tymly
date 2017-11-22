@@ -37,6 +37,7 @@ describe('Teams tests', function () {
       }
     })
       .then(result => {
+        console.log('result: ' + JSON.stringify(result))
         expect(result[0].title).to.eql('Systems Development')
         expect(result[0].description).to.eql('The ICT Systems Development Team at West Midlands Fire Service')
         expect(result[0].style).to.eql({'icon': 'computer', 'backgroundColor': '#000000'})
