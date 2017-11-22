@@ -38,6 +38,8 @@ describe('Settings tests', function () {
         expect(result[0].userId).to.eql('user1')
         expect(result[0].categoryRelevance).to.eql(['incidents', 'hr', 'hydrants', 'gazetteer'])
         done()
+      }).catch(error => {
+        done(error)
       })
   })
 })

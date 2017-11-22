@@ -16,6 +16,7 @@ describe('Demo tests', function () {
     tymly.boot(
       {
         pluginPaths: [
+          require.resolve('tymly-pg-plugin'),
           require.resolve('tymly-users-plugin')
         ],
         blueprintPaths: [
@@ -38,6 +39,8 @@ describe('Demo tests', function () {
         expect(result[0].description).to.eql('Things to do with claiming and authorising expenses')
         expect(result[0].style).to.eql({'icon': 'coin', 'backgroundColor': '#00GG00'})
         done()
+      }).catch(error => {
+        done(error)
       })
   })
   it('should get favourites', function (done) {
@@ -47,6 +50,8 @@ describe('Demo tests', function () {
         expect(result[0].userId).to.eql('user1')
         expect(result[0].stateMachineNames).to.eql({user1: ['wmfs_claimAnExpense_1_0', 'wmfs_reportHydrantDefect_1_0']})
         done()
+      }).catch(error => {
+        done(error)
       })
   })
   it('should get notifications', function (done) {
@@ -65,6 +70,8 @@ describe('Demo tests', function () {
         expect(result[2].description).to.eql('Expense claim #3')
         expect(result[2].category).to.eql('information')
         done()
+      }).catch(error => {
+        done(error)
       })
   })
   it('should get the todos', function (done) {
@@ -80,6 +87,8 @@ describe('Demo tests', function () {
         expect(result[2].userId).to.eql('test')
         expect(result[2].description).to.eql('Walter White is claiming $50 for A large costume')
         done()
+      }).catch(error => {
+        done(error)
       })
   })
   it('should get the watched boards', function (done) {
@@ -95,6 +104,8 @@ describe('Demo tests', function () {
         expect(result[2].userId).to.eql('test')
         expect(result[2].description).to.eql('RTC with 2 casualties and 0 fatalities')
         done()
+      }).catch(error => {
+        done(error)
       })
   })
   it('should get forms', function (done) {
