@@ -1,0 +1,42 @@
+{
+  "title": "Planet",
+  "description": "A list of planets",
+  "primaryKey": [
+    "name"
+  ],
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the planet"
+    },
+    "type": {
+      "type": "string",
+      "description": "The type of planet"
+    },
+    "diameterInKilometers": {
+      "type": "integer",
+      "description": "The diameter, in kilometers of the planet"
+    },
+    "orbitInEarthDays": {
+      "type": "integer",
+      "description": "The number of Earth days it takes to circumnavigate the Sun"
+    },
+    "namedFor": {
+      "type": "string",
+      "description": "What the planet was named after"
+    }
+  },
+  "indexes": [
+    {
+      "columns": [
+        "name"
+      ],
+      "unique": true
+    }
+  ],
+  "required": [
+    "name",
+    "type"
+  ]
+}

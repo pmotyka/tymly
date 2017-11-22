@@ -1,0 +1,12 @@
+{
+  "namespace": "tymlyTest",
+  "name": "planet",
+  "version": "1.0",
+
+  "label": "Planet",
+  "author": "Jasvinder Bahra",
+
+  "organisation": "Tymlys",
+  "description": "An example Tymly Blueprint to store information about a set of planets.",
+  "categories": ["planet", "test"]
+}

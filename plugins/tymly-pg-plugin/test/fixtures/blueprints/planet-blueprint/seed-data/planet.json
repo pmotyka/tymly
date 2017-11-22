@@ -1,0 +1,20 @@
+{
+  "propertyNames": [
+    "name",
+    "type",
+    "diameterInKilometers",
+    "orbitInEarthDays",
+    "namedFor"
+  ],
+  "data": [
+    [ "Mercury", "terrestrial", 4878, 88, "Messenger of the Roman gods" ],
+    [ "Venus", "terrestrial", 12104, 225, "Roman goddess of love and beauty" ],
+    [ "Earth", "terrestrial", 12760, 365, "" ],
+    [ "Mars", "terrestrial", 6787, 687, "Roman god of war" ],
+    [ "Jupiter", "jovian", 139822, 4346, "Ruler of the Roman gods" ],
+    [ "Saturn", "jovian", 120500, 10775, "Roman god of agriculture" ],
+    [ "Uranus", "jovian", 51120, 30680, "Personification of heaven in ancient myth" ],
+    [ "Neptune", "jovian", 49530, 60265, "Roman god of water" ],
+    [ "Pluto", "dwarf", 2301, 90580, "Roman god of the underworld, Hades" ]
+  ]
+}

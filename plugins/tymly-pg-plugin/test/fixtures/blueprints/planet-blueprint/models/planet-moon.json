@@ -1,0 +1,30 @@
+{
+  "title": "Planet Moon",
+  "description": "A list of planet moons",
+  "primaryKey": [
+    "name"
+  ],
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the planet"
+    },
+    "orbitingPlanet": {
+      "type": "string",
+      "description": "The planet this moon orbits"
+    }
+  },
+  "indexes": [
+    {
+      "columns": [
+        "name"
+      ],
+      "unique": true
+    }
+  ],
+  "required": [
+    "name",
+    "planet"
+  ]
+}
