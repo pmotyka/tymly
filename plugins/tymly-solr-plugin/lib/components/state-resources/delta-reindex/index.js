@@ -1,4 +1,5 @@
 'use strict'
+'use strict'
 
 class DeltaReindex {
   init (resourceConfig, env, callback) {
@@ -13,7 +14,7 @@ class DeltaReindex {
       if (err) {
         context.sendTaskFailure(
           {
-            error: 'fullReindexFail',
+            error: 'deltaReindexFail',
             cause: err
           }
         )
