@@ -16,7 +16,7 @@ describe('Demo tests', function () {
     tymly.boot(
       {
         pluginPaths: [
-          require.resolve('tymly-pg-plugin'),
+          // require.resolve('tymly-pg-plugin'),
           require.resolve('tymly-users-plugin')
         ],
         blueprintPaths: [
@@ -31,17 +31,6 @@ describe('Demo tests', function () {
         done()
       }
     )
-  })
-  it('should get categories', function (done) {
-    models.tymly_categories.find('Expenses')
-      .then(result => {
-        expect(result[0].label).to.eql('Expenses')
-        expect(result[0].description).to.eql('Things to do with claiming and authorising expenses')
-        expect(result[0].style).to.eql({'icon': 'coin', 'backgroundColor': '#00GG00'})
-        done()
-      }).catch(error => {
-        done(error)
-      })
   })
   it('should get favourites', function (done) {
     models.tymly_favouringStartableStateMachines.find('user1')
