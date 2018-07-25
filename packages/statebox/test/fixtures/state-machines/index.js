@@ -10,6 +10,7 @@ module.exports = {
   pass: require('./pass-state-machine.json'),
   fail: require('./fail-state-machine.json'),
   parallel: require('./parallel-state-machine.json'),
+  parallelResults: require('./parallel-results-machine.json'),
   parallelFail: require('./parallel-fail-state-machine.json'),
   waitState: require('./wait-state-machine.json')
 }
